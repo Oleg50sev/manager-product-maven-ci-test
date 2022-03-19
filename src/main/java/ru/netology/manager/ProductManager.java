@@ -29,9 +29,6 @@ public class ProductManager {
 
     // метод определения соответствия товара product запросу search
     public boolean matches(Product product, String search) {
-        if (product.getName().contains(search)) {
-            return true;
-        }
         return product.getName().contains(search);
     }
 }
